@@ -19,9 +19,9 @@ namespace ASP.NET_Core_MVC_Sample.Controllers
         //    return "This is the Welcome action methd...";
         //}
 
-        public String Welcome(String name, Int32 numTimes = 1)
+        public string Welcome(String name, Int32 ID = 1)
         {
-            return HtmlEncoder.Default.Encode($"Hello {name}, NumTime is : {numTimes}");
+            return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
         }
     }
 }
