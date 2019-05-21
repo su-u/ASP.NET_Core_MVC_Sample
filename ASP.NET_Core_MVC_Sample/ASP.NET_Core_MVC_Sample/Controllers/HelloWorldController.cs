@@ -9,9 +9,9 @@ namespace ASP.NET_Core_MVC_Sample.Controllers
 {
     public class HelloWorldController : Controller
     {
-        public String Index()
+        public IActionResult Index()
         {
-            return "This is my default action...";
+            return View();
         }
 
         //public String Welcome()
